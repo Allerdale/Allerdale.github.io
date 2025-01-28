@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<title>SLAM</title>
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=500, initial-scale=1">
+<link rel="stylesheet" href="../../css/cssgram.min.css" />
+<style>
+	:root	{
+ /* * * * * * * * *
+ * Basic Styling *
+* * * * * * * * */
+			--size1: 64px;	//cell
+			--size2: 32px/4;	//font
+			--scheme-fg: #fff;	//foreground
+			--scheme-bg: #fff;	//background
+			--scheme-hl: #fff;	//hightlight
+ /* * * * * * * * *
+ * * Palettes! * *
+* * * * * * * * */
+			--offense-1: #D60026;	//агрессия верх
+			--offense-2: #720012;	//агрессия низ
+			--defense-1: #008E3C;	//защита верх
+			--defense-2: #00451A;	//защита низ
+			--data-1: #1B2A34;	//информация верх
+			--data-2: #0A1327;	//информация низ
+			--subterfuge-1: #0059A3;	//контроль верх
+			--subterfuge-2: #19325A;	//контроль низ
+			}
+ /* * * * * * * * *
+ * * * Style * * *
+* * * * * * * * */
+*	{margin: 0;
+	padding: 0;}
+TABLE	{border-spacing: 8pt;
+		empty-cells: hide;}
+TD	{border-radius: 16%;
+	font: small-caps ultra-condensed 34pt/1em 'Go Mono';
+	height: var(--size1);
+	width: var(--size1);}
+
+.data, .defense, .offense, .subterfuge	{text-align: center;
+										vertical-align: middle;}
+
+
+
+.offense	{background: linear-gradient(0deg,
+				#720012,
+				#720012 20%,
+				#D60026 80%,
+				#D60026);
+			;}
+.defense	{background: linear-gradient(0deg,
+				#00451A,
+				#00451A 20%,
+				#008E3C 80%,
+				#008E3C);
+			font-weight: 500;
+			;}
+.data	{background: linear-gradient(0deg,
+				#0A1327,
+				#0A1327 20%,
+				#1B2A34 80%,
+				#1B2A34);
+			font-weight: 500;
+			;}
+.subterfuge	{background: linear-gradient(0deg,
+				#19325A,
+				#19325A 20%,
+				#0059A3 80%,
+				#0059A3);
+			font-weight: 500;
+			;}
+.chaos	{background: linear-gradient(0deg,
+				#19325A,
+				#19325A 20%,
+				green 80%,
+				green);
+			;}
+</style>
+</head>
+<body style="margin: 0px; height: 100%; background-color: rgb(14, 14, 14);">
+	<table>
+		<tbody>
+			<tr>
+				<td class="offense">
+					×
+				</td>
+				<td class="defense">
+					□
+				</td>
+				<td class="data">
+					△
+				</td>
+				<td class="subterfuge">
+					○︎
+				</td>
+				<td class="offense">
+					↑
+				</td>
+				<td class="offense">
+					→
+				</td>
+				<td class="offense">
+					↓
+				</td>
+				<td class="offense">
+					←
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<ol>
+		<li>
+			aden — <img class="aden" src="../../../test.png" >
+		</li>
+		<li>
+			brannan — <img class="brannan" src="../../../test.png" >
+		</li>
+		<li>
+			brooklyn — <img class="brooklyn" src="../../../test.png" >
+		</li>
+		<li>
+			clarendon — <img class="clarendon" src="../../../test.png" >
+		</li>
+		<li>
+			earlybird — <img class="earlybird" src="../../../test.png" >
+		</li>
+		<li>
+			gingham — <img class="gingham" src="../../../test.png" >
+		</li>
+		<li>
+			hudson — <img class="hudson" src="../../../test.png" >
+		</li>
+		<li>
+			inkwell — <img class="inkwell" src="../../../test.png" >
+		</li>
+		<li>
+			kelvin — <img class="kelvin" src="../../../test.png" >
+		</li>
+		<li>
+			lark — <img class="lark" src="../../../test.png" >
+		</li>
+		<li>
+			lofi — <img class="lofi" src="../../../test.png" >
+		</li>
+		<li>
+			maven — <img class="maven" src="../../../test.png" >
+		</li>
+		<li>
+			mayfair — <img class="mayfair" src="../../../test.png" >
+		</li>
+		<li>
+			moon — <img class="moon" src="../../../test.png" >
+		</li>
+		<li>
+			nashville — <img class="nashville" src="../../../test.png" >
+		</li>
+		<li>
+			perpetua — <img class="perpetua" src="../../../test.png" >
+		</li>
+
+		<li>
+			reyes — <img class="reyes" src="../../../test.png" >
+		</li>
+		<li>
+			rise — <img class="rise" src="../../../test.png" >
+		</li>
+		<li>
+			slumber — <img class="slumber" src="../../../test.png" >
+		</li>
+
+
+		<li>
+			stinson — <img class="stinson" src="../../../test.png" >
+		</li>
+		<li>
+			toaster — <img class="toaster" src="../../../test.png" >
+		</li>
+		<li>
+			valencia — <img class="valencia" src="../../../test.png" >
+		</li>
+		<li>
+			walden — <img class="walden" src="../../../test.png" >
+		</li>
+		<li>
+			willow — <img class="willow" src="../../../test.png" >
+		</li>
+		<li>
+			xpro — <img class="xpro" src="../../../test.png" >
+		</li>
+	</ol>
+</body>
